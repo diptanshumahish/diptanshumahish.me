@@ -13,7 +13,7 @@ export default function Header() {
         <DesParralBack />
         <div className="absolute lg:top-0 lg:left-0 top-20 left-0 ">
           <span className="lg:p-10 p-4 flex flex-col ">
-            <span className="lg:text-6xl text-xl font-bold tracking-tight">
+            <span className="lg:text-4xl text-xl font-bold tracking-tight">
               Some Designing?
             </span>
             <span className={`${annie.className} lg:text-2xl text-lg`}>
@@ -25,7 +25,7 @@ export default function Header() {
         <FanctText content='"All bout me !"' />
         <div className="absolute lg:bottom-0 lg:right-0 bottom-20 right-10 ">
           <span className="lg:p-10 flex flex-col items-end ">
-            <span className="lg:text-6xl text-xl  font-bold tracking-tight">
+            <span className="lg:text-4xl text-xl  font-bold tracking-tight">
               Wanna work with me?
             </span>
             <span className={`${annie.className} lg:text-2xl text-xl`}>
