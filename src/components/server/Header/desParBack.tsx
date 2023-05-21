@@ -12,7 +12,7 @@ export default function DesParralBack() {
       className="absolute top-0 left-0  opacity-20"
     >
       <Image
-        src="/des.png"
+        src="/testback.svg"
         alt="design"
         height={900}
         width={900}
