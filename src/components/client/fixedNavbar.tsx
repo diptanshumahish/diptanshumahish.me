@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Check, Moon, Sun } from "@phosphor-icons/react";
+import { Check, Sun } from "@phosphor-icons/react";
 import { apiCall, defaultQuote } from "@/api-fetch/quotesApi";
 import { useQuery } from "@tanstack/react-query";
 import Hydrate from "@/api-fetch/hydrateClient";
@@ -69,7 +69,7 @@ export default function FixedNavbar() {
           }}
           className="border-backgroundDark dark:border-borders-dark border-0 hover:bg-main-theme  border-r flex flex-col items-center justify-center "
         >
-          <Sun className="hidden lg:block" />
+          <Sun className="hidden lg:block dark:rotate-90 transition-transform" />
           <span>Theme</span>
         </button>
         <button className="border-backgroundDark dark:border-borders-dark border-0 hover:bg-main-theme  border-r flex flex-col items-center justify-center ">
