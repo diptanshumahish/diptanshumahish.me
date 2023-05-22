@@ -16,7 +16,7 @@ export default function DesParralBack() {
         alt="design"
         height={900}
         width={900}
-        className="lg:w-[100%] object-cover  lg:h-auto h-[100vh] w-auto"
+        className="lg:w-[100%] object-cover  lg:h-auto h-[100vh] w-auto dark:invert "
       />
     </motion.span>
   );

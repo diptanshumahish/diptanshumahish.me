@@ -16,7 +16,7 @@ export default function ParralBack() {
         alt="design"
         height={900}
         width={900}
-        className="w-[100%] h-auto"
+        className="w-[100%] h-auto dark:invert"
       />
     </motion.span>
   );

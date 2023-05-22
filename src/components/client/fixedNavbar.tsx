@@ -19,7 +19,7 @@ export default function FixedNavbar() {
   }
 
   return (
-    <nav className=" grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-borders-dark text-backgroundDark dark:text-backgroundLight ">
+    <nav className=" transition-colors grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-borders-dark text-backgroundDark dark:text-backgroundLight ">
       {/* logo and branding  */}
       <div className="flex  items-center lg:justify-center border-backgroundDark dark:border-borders-dark border-0  border-r py-2 lg:px-4">
         <div className="flex items-center  lg:gap-5 gap-2">
@@ -28,7 +28,7 @@ export default function FixedNavbar() {
             height={60}
             width={60}
             alt="uiuxwithdiptanshu"
-            className="aspect-square lg:h-[60px] h-[30px]"
+            className="aspect-square lg:h-[60px] h-[30px] dark:invert"
           />
           <Link href="/" className="lg:text-2xl ">
             UIUXwithdiptanshu
@@ -61,7 +61,6 @@ export default function FixedNavbar() {
               window.document.body.classList.add("dark");
               localStorage.setItem("themeMode", "true");
             }
-           
 
             if (localStorage.getItem("themeMode") === null) {
               window.document.body.classList.add("dark");

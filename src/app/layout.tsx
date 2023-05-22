@@ -21,8 +21,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="">
-      <body className={`${anyobody.className} w-full`}>
+    <html lang="en">
+      <body className={`${anyobody.className} w-full `}>
         <Providers>
           <NavbarWrapper />
           <div className="lg:pt-[76px] pt-[46px] ">{children}</div>
