@@ -21,10 +21,10 @@ export default function FixedNavbar() {
   return (
     <nav
       // style={{ gridTemplateColumns: "2fr 4fr 2fr" }}
-      className=" grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-backgroundLight text-backgroundDark dark:text-backgroundLight "
+      className=" grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-borders-dark text-backgroundDark dark:text-backgroundLight "
     >
       {/* logo and branding  */}
-      <div className="flex  items-center lg:justify-center border-backgroundDark dark:border-backgroundLight border-0  border-r py-2 lg:px-4">
+      <div className="flex  items-center lg:justify-center border-backgroundDark dark:border-borders-dark border-0  border-r py-2 lg:px-4">
         <div className="flex items-center  lg:gap-5 gap-2">
           <Image
             src="/trans.svg"
@@ -41,7 +41,7 @@ export default function FixedNavbar() {
       {/* quote of the day  */}
 
       <Hydrate>
-        <div className="p-2  px-4 hidden lg:flex justify-between items-center border-backgroundDark border-0  border-r  dark:border-backgroundLight">
+        <div className="p-2  px-4 hidden lg:flex justify-between items-center border-backgroundDark border-0  border-r  dark:border-borders-dark">
           <span className="text-lg">{JSON.stringify(data?.[0].content)}</span>
           <span className="flex flex-col text-right">
             <span className="font-semibold">quote of the day</span>
@@ -55,7 +55,7 @@ export default function FixedNavbar() {
         className="grid w-full text-[12px] md:text-[18px]  "
         style={{ gridTemplateColumns: "1fr 1fr" }}
       >
-        <button className="border-backgroundDark dark:border-backgroundLight border-0 hover:bg-main-theme  border-r flex flex-col items-center justify-center ">
+        <button className="border-backgroundDark dark:border-borders-dark border-0 hover:bg-main-theme  border-r flex flex-col items-center justify-center ">
           <Check className="hidden lg:block" />
           <span>Works</span>
         </button>

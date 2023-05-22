@@ -31,7 +31,7 @@ export default function FancyItems() {
       <div className="w-[90%] lg:w-unset grid grid-cols-3 gap-4 grid-flow-row  ">
         <motion.div
           style={{ y: fig }}
-          className="row-span-3 bg-sec-theme rounded-xl flex flex-col items-center justify-center border-2 border-backgroundDark lg:text-4xl"
+          className="row-span-3 bg-sec-theme rounded-xl flex flex-col items-center justify-center border-2 border-backgroundDark dark:border-borders-dark border-b-4 lg:text-4xl"
         >
           <span className="flex items-center">
             {" "}
@@ -56,7 +56,7 @@ export default function FancyItems() {
         </motion.div>
         <motion.div
           style={{ y: ui }}
-          className="rounded-xl row-span-4 border-2  border-backgroundDark bg-main-theme flex items-center justify-center flex-col"
+          className="rounded-xl row-span-4 border-2  border-backgroundDark dark:border-borders-dark border-b-4  bg-main-theme flex items-center justify-center flex-col"
         >
           <Image
             src="/trans.svg"
@@ -74,7 +74,7 @@ export default function FancyItems() {
           <SmallBanners
             content="Websites"
             icon={<Aperture />}
-            randomNumber={4}
+            randomNumber={2}
           />
         </motion.div>
       </div>

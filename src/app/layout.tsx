@@ -3,6 +3,7 @@ import "../styles/globals.css";
 import { Anybody } from "next/font/google";
 import { NavbarWrapper } from "@/components";
 import Providers from "./providers";
+
 const anyobody = Anybody({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,15 +21,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={`${anyobody.className} bg-backgroundLight dark:bg-backgroundDark w-full`}
-      >
-        <Providers>
-          <NavbarWrapper />
-          <div className="lg:pt-[76px] pt-[46px] ">{children}</div>
-        </Providers>
-      </body>
+    <html lang="en" className="dark">
+     
+        <body
+          className={`${anyobody.className}  bg-backgroundLight dark:bg-backgroundDark w-full`}
+        >
+          <Providers>
+            <NavbarWrapper />
+            <div className="lg:pt-[76px] pt-[46px] ">{children}</div>
+          </Providers>
+        </body>
+ 
     </html>
   );
 }

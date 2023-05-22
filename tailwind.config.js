@@ -25,7 +25,8 @@ module.exports = {
       "backgroundLight": "#E8E0E0",
       "backgroundDark": "#1e1e1e",
       "main-theme": "#EA899A",
-      "sec-theme":"#98ea89"
+      "sec-theme":"#98ea89",
+      "borders-dark":"#e8e0e03c"
     }
   },
   plugins: [],
