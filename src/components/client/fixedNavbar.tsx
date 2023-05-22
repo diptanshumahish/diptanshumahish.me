@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Check, Moon, Sun } from "@phosphor-icons/react";
 import { apiCall, defaultQuote } from "@/api-fetch/quotesApi";
 import { useQuery } from "@tanstack/react-query";
-import Hydrate from "@/app/hydrateClient";
+import Hydrate from "@/api-fetch/hydrateClient";
 
 export default function FixedNavbar() {
   const { data, status } = useQuery({

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import "../styles/globals.css";
 import { Anybody } from "next/font/google";
 import { NavbarWrapper } from "@/components";
-import Providers from "./providers";
+import Providers from "../api-fetch/providers";
 
 const anyobody = Anybody({ subsets: ["latin"] });
 
