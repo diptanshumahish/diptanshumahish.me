@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Check, Moon } from "@phosphor-icons/react";
+import { Check, Moon, Sun } from "@phosphor-icons/react";
 import { apiCall, defaultQuote } from "@/api-fetch/quotesApi";
 import { useQuery } from "@tanstack/react-query";
 import Hydrate from "@/app/hydrateClient";
@@ -19,10 +19,7 @@ export default function FixedNavbar() {
   }
 
   return (
-    <nav
-      // style={{ gridTemplateColumns: "2fr 4fr 2fr" }}
-      className=" grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-borders-dark text-backgroundDark dark:text-backgroundLight "
-    >
+    <nav className=" grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-borders-dark text-backgroundDark dark:text-backgroundLight ">
       {/* logo and branding  */}
       <div className="flex  items-center lg:justify-center border-backgroundDark dark:border-borders-dark border-0  border-r py-2 lg:px-4">
         <div className="flex items-center  lg:gap-5 gap-2">
@@ -53,8 +50,29 @@ export default function FixedNavbar() {
       {/* action buttons  */}
       <div
         className="grid w-full text-[12px] md:text-[18px]  "
-        style={{ gridTemplateColumns: "1fr 1fr" }}
+        style={{ gridTemplateColumns: "1fr 1fr 1fr" }}
       >
+        <button
+          onClick={() => {
+            if (localStorage.getItem("themeMode") === "true") {
+              window.document.body.classList.remove("dark");
+              localStorage.setItem("themeMode", "false");
+            } else if (localStorage.getItem("themeMode") === "false") {
+              window.document.body.classList.add("dark");
+              localStorage.setItem("themeMode", "true");
+            }
+           
+
+            if (localStorage.getItem("themeMode") === null) {
+              window.document.body.classList.add("dark");
+              localStorage.setItem("themeMode", "true");
+            }
+          }}
+          className="border-backgroundDark dark:border-borders-dark border-0 hover:bg-main-theme  border-r flex flex-col items-center justify-center "
+        >
+          <Sun className="hidden lg:block" />
+          <span>Theme</span>
+        </button>
         <button className="border-backgroundDark dark:border-borders-dark border-0 hover:bg-main-theme  border-r flex flex-col items-center justify-center ">
           <Check className="hidden lg:block" />
           <span>Works</span>

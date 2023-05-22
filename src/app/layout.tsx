@@ -21,17 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-     
-        <body
-          className={`${anyobody.className}  bg-backgroundLight dark:bg-backgroundDark w-full`}
-        >
-          <Providers>
-            <NavbarWrapper />
-            <div className="lg:pt-[76px] pt-[46px] ">{children}</div>
-          </Providers>
-        </body>
- 
+    <html lang="en" className="">
+      <body className={`${anyobody.className} w-full`}>
+        <Providers>
+          <NavbarWrapper />
+          <div className="lg:pt-[76px] pt-[46px] ">{children}</div>
+        </Providers>
+      </body>
     </html>
   );
 }

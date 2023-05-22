@@ -10,7 +10,7 @@ import DesParralBack from "./desParBack";
 export default function Header() {
 
   return (
-    <div className="grid overflow-hidden z-0 lg:grid-cols-2 md:grid-cols-1 min-h-[800px] lg:h-[92vh]  border-b border-backgroundDark dark:border-borders-dark ">
+    <div className="grid overflow-hidden  lg:grid-cols-2 md:grid-cols-1 min-h-[800px] lg:h-[92vh]  border-b border-backgroundDark dark:border-borders-dark ">
       <div className="overflow-hidden relative  border-0 lg:border-r border-b lg:border-b-0  h-[100vh] lg:h-auto dark:border-borders-dark  flex w-[100vw] lg:w-unset items-center justify-center flex-col gap-2 ">
         <DesParralBack />
         <div className="absolute lg:top-0 lg:left-0 top-20 left-0 ">
