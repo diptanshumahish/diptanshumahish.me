@@ -8,8 +8,7 @@ import {
 } from "framer-motion";
 import SmallBanners from "../server/banner/small-banners";
 import Image from "next/image";
-import { Annie_Use_Your_Telescope } from "next/font/google";
-const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
+
 import {
   Aperture,
   AppStoreLogo,
@@ -17,6 +16,8 @@ import {
   FigmaLogo,
   MusicNote,
 } from "@phosphor-icons/react";
+import { Annie_Use_Your_Telescope } from "next/font/google";
+const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
 
 export default function FancyItems() {
   let { scrollYProgress } = useScroll();

@@ -6,6 +6,7 @@ import { Check, Sun } from "@phosphor-icons/react";
 import { apiCall, defaultQuote } from "@/api-fetch/quotesApi";
 import { useQuery } from "@tanstack/react-query";
 import Hydrate from "@/api-fetch/hydrateClient";
+import { cookies } from "next/dist/client/components/headers";
 
 export default function FixedNavbar() {
   const { data, status } = useQuery({
@@ -28,7 +29,7 @@ export default function FixedNavbar() {
             height={60}
             width={60}
             alt="uiuxwithdiptanshu"
-            className="aspect-square lg:h-[60px] h-[30px] dark:invert"
+            className="aspect-square lg:h-[60px] h-[30px] w-auto dark:invert"
           />
           <Link href="/" className="lg:text-2xl ">
             UIUXwithdiptanshu
@@ -54,8 +55,9 @@ export default function FixedNavbar() {
       >
         <button
           onClick={() => {
+            
             if (localStorage.getItem("themeMode") === "true") {
-              window.document.body.classList.remove("dark");
+              document.body.classList.remove("dark");
               localStorage.setItem("themeMode", "false");
             } else if (localStorage.getItem("themeMode") === "false") {
               window.document.body.classList.add("dark");
@@ -63,7 +65,7 @@ export default function FixedNavbar() {
             }
 
             if (localStorage.getItem("themeMode") === null) {
-              window.document.body.classList.add("dark");
+              document.body.classList.add("dark");
               localStorage.setItem("themeMode", "true");
             }
           }}
