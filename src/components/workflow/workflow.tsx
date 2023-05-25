@@ -10,7 +10,7 @@ export default function Workflow() {
         <span className="text-[16px]">Here&apos;s how my </span>
         <span className="text-4xl font-bold">Workflow looks like</span>
         <span className={`${annie.className} text-xl`}>
-          "This is how the magic happens"
+          &quot;This is how the magic happens&quot;
         </span>
       </span>
 
