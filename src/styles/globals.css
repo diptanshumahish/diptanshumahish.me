@@ -12,9 +12,9 @@
     /* -moz-osx-font-smoothing: grayscale; */
     text-rendering: optimizeLegibility;
 }
-/* body{
-    background-color: #e8e0e03c;
-} */
+.hidden-scroll::-webkit-scrollbar{
+    display: none;
+}
 
 .transition-colors {
     transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;

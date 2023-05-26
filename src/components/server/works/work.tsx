@@ -1,9 +1,9 @@
 import React from "react";
-import Workcard from "./workcard";
+import WorkCards from "./workCards";
 
 export default function Work() {
   return (
-    <div className="w-full lg:p-10">
+    <div className="w-full lg:p-10 p-5 flex flex-col gap-4 text-backgroundDark dark:text-backgroundLight">
       <div className="w-full flex justify-between items-center">
         <div className="w-full flex flex-col ">
           <span>Some of my </span>
@@ -15,7 +15,46 @@ export default function Work() {
       </div>
 
       {/* render cards  */}
-      <Workcard />
+      <WorkCards
+        cards={[
+          {
+            name: "Warrior's Group Website",
+            date: "28th September, 2022",
+            details:
+              "The official website Of Warriors's Group LLC. This website is meant to attract potential customers needing staffing and recruitment solutions to get their technical and non technical solutions with  ease.",
+            imageLink: "/trans.svg",
+            liveLink: "",
+            technologies: "Nextjs,CSS, Formsubmit",
+          },
+          {
+            name: "Warrior's Group Website",
+            date: "28th September, 2022",
+            details:
+              "The official website Of Warriors's Group LLC. This website is meant to attract potential customers needing staffing and recruitment solutions to get their technical and non technical solutions with  ease.",
+            imageLink: "/trans.svg",
+            liveLink: "",
+            technologies: "Nextjs,CSS, Formsubmit",
+          },
+          {
+            name: "Warrior's Group Website",
+            date: "28th September, 2022",
+            details:
+              "The official website Of Warriors's Group LLC. This website is meant to attract potential customers needing staffing and recruitment solutions to get their technical and non technical solutions with  ease.",
+            imageLink: "/trans.svg",
+            liveLink: "",
+            technologies: "Nextjs,CSS, Formsubmit",
+          },
+          {
+            name: "Warrior's Group Website",
+            date: "28th September, 2022",
+            details:
+              "The official website Of Warriors's Group LLC. This website is meant to attract potential customers needing staffing and recruitment solutions to get their technical and non technical solutions with  ease.",
+            imageLink: "/trans.svg",
+            liveLink: "",
+            technologies: "Nextjs,CSS, Formsubmit",
+          },
+        ]}
+      />
     </div>
   );
 }
