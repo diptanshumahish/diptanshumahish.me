@@ -2,39 +2,50 @@ import React from "react";
 import { Annie_Use_Your_Telescope } from "next/font/google";
 const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
 import Image from "next/image";
-interface Props {}
+interface Props {
+  stepNum: number;
+  stepName: string;
+  stepSub: string;
+  stepImage: string;
+  stepDet: string;
+  stepTime: string;
+}
 
-export default function StepCard() {
+export default function StepCard({
+  stepDet,
+  stepImage,
+  stepName,
+  stepNum,
+  stepSub,
+  stepTime,
+}: Props) {
   return (
-    <div className="w-full flex flex-col gap-4 border border-backgroundDark dark:border-borders-dark rounded-lg p-8">
-      <div className="w-full flex justify-between items-center border-b border-backgroundLight dark:border-borders-dark  pb-5">
-        <div className="bg-backgroundDark dark:bg-backgroundLight text-xl w-fit py-4 px-16 text-backgroundLight dark:text-backgroundDark rounded-lg">
-          Step 1.
+    <div className="w-full flex flex-col gap-4 border border-backgroundDark dark:border-borders-dark lg:border-b-4 border-b-2 rounded-lg p-8">
+      <div className="w-full flex md:flex-row flex-col gap-2 items-start justify-between md:gap-0  md:items-center border-b border-backgroundLight dark:border-borders-dark   pb-5">
+        <div className="bg-backgroundDark dark:bg-backgroundLight lg:text-xl w-fit lg:py-4 lg:px-16 py-2 px-4 text-backgroundLight dark:text-backgroundDark rounded-lg">
+          Step {stepNum}.
         </div>
-        <div className=" flex flex-col items-end text-backgroundDark dark:text-backgroundLight">
-          <span className="font-bold text-2xl">Task Collection</span>
-          <span className={`${annie.className} text-xl`}>
-            This is where it all starts
-          </span>
+        <div className=" flex flex-col md:items-end text-backgroundDark  bg-sec-theme p-2 px-4 rounded-md border dark:border-borders-dark">
+          <span className="font-bold lg:text-2xl">{stepName}</span>
+          <span className={`${annie.className} text-xl`}>{stepSub}</span>
         </div>
       </div>
       <Image
-        src="/step1.svg"
+        src={stepImage}
         width={1920}
         height={200}
         alt="step 1"
         className="w-full h-auto dark:invert "
       />
       <hr className="text-backgroundDark dark:text-borders-dark" />
-      <div className="text-lg text-backgroundDark dark:text-backgroundLight">
-        This is one of the{" "}
-        <span className="font-semibold underline">
-          most important yet overlooked steps
+      <div className="lg:text-lg text-sm text-backgroundDark dark:text-backgroundLight">
+        {stepDet}
+      </div>
+      <div>
+        <span className="bg-main-theme px-4 py-2 rounded-lg border flex md:flex-row flex-col ">
+          <span className="font-bold text-xs">Time I spend on this :</span>
+          <span className="text-xs"> {stepTime}</span>
         </span>
-        , when working with any project, I believe understanding the
-        client/project requirements is a major part of a sucessful project. Also
-        I make sure that I give ample time to this before I start with a
-        project. After all quality over quantity ✨
       </div>
     </div>
   );
