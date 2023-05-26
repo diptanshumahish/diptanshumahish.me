@@ -2,7 +2,7 @@
 import React from "react";
 import { Annie_Use_Your_Telescope } from "next/font/google";
 const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
-import { motion } from "framer-motion";
+import { backIn, easeInOut, motion } from "framer-motion";
 import StepCardImage from "./stepCardImage";
 interface Props {
   stepNum: number;
@@ -23,9 +23,9 @@ export default function StepCard({
 }: Props) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.2 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ delay: 0.2, ease: "easeInOut" }}
       viewport={{ once: true }}
       className="relative w-full flex flex-col gap-4 border border-backgroundDark dark:border-borders-dark lg:border-b-4 border-b-2 rounded-lg md:p-8 p-[14px]"
     >
@@ -40,11 +40,19 @@ export default function StepCard({
           </span>
         </div>
       </div>
+
       <StepCardImage imageLink={stepImage} />
+
       <hr className="text-backgroundDark dark:text-borders-dark" />
-      <div className="lg:text-lg text-sm text-backgroundDark dark:text-backgroundLight">
+      <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeOut", bounce: backIn }}
+        viewport={{ once: true }}
+        className="lg:text-lg text-sm overflow-y-hidden text-backgroundDark dark:text-backgroundLight"
+      >
         {stepDet}
-      </div>
+      </motion.div>
       <div>
         <span className="bg-main-theme px-4 py-2 rounded-lg border  lg:gap-2 flex md:flex-row flex-col ">
           <span className="font-bold lg:text-sm text-xs">
