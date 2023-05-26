@@ -21,7 +21,7 @@ export default function StepCardImage({ imageLink }: Props) {
         width={720}
         height={200}
         alt="step 1"
-        className="w-full h-auto dark:invert max-h-0 transition-all duration-500 "
+        className="w-full h-auto dark:invert max-h-0 transition-transform duration-500 "
         onLoadingComplete={(image) => {
           setLoader(false);
           image.classList.remove("max-h-0");
