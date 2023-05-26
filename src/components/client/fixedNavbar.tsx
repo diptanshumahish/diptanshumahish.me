@@ -37,6 +37,7 @@ export default function FixedNavbar() {
           <button
             onClick={() => {
               document.getElementById("mobNav")?.classList.add("hidden");
+              document.body.classList.remove("overflow-hidden");
             }}
           >
             <XCircle />
@@ -81,7 +82,7 @@ export default function FixedNavbar() {
       </div>
       <nav className=" transition-colors grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-borders-dark text-backgroundDark dark:text-backgroundLight ">
         {/* logo and branding  */}
-        <div className="flex  items-center lg:justify-center border-backgroundDark dark:border-borders-dark border-0  border-r py-4  px-4 ">
+        <div className="flex  items-center lg:justify-center border-backgroundDark dark:border-borders-dark border-0  border-r py-4  px-4 lg:py-2 ">
           <div className="flex items-center  lg:gap-5 gap-2">
             <Image
               src="/trans.svg"
@@ -133,16 +134,17 @@ export default function FixedNavbar() {
             <span>Theme</span>
           </button>
           <button className="border-backgroundDark dark:border-borders-dark border-0 hover:bg-main-theme  border-r flex flex-col items-center justify-center ">
-            <Check className="hidden lg:block" />
+            <Briefcase className="hidden lg:block" />
             <span>Works</span>
           </button>
           <button className="hover:bg-main-theme">Contact</button>
         </div>
         <button
-          className="flex items-center justify-center"
+          className="flex items-center  justify-center md:hidden"
           onClick={() => {
             document.getElementById("mobNav")?.classList.remove("hidden");
             document.getElementById("mobNav")?.classList.add("flex");
+            document.body.classList.add("overflow-hidden");
           }}
         >
           <List />
