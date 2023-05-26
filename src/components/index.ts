@@ -4,6 +4,7 @@ import FancyItems from "./wrapper/fancy-items";
 import FanctText from "./server/FancyTexts/fancy-text";
 import FloatingSocials from "./server/Header/floatingSocials";
 import Workflow from "./workflow/workflow";
+import Work from "./server/works/work";
 
 export {
   Header,
@@ -12,4 +13,5 @@ export {
   FanctText,
   FloatingSocials,
   Workflow,
+  Work
 };

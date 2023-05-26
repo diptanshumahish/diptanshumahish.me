@@ -1,7 +1,8 @@
+"use client";
 import React from "react";
 import { Annie_Use_Your_Telescope } from "next/font/google";
 const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
-import Image from "next/image";
+import { motion } from "framer-motion";
 import StepCardImage from "./stepCardImage";
 interface Props {
   stepNum: number;
@@ -21,7 +22,13 @@ export default function StepCard({
   stepTime,
 }: Props) {
   return (
-    <div className="relative w-full flex flex-col gap-4 border border-backgroundDark dark:border-borders-dark lg:border-b-4 border-b-2 rounded-lg md:p-8 p-[14px]">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.2 }}
+      viewport={{ once: true }}
+      className="relative w-full flex flex-col gap-4 border border-backgroundDark dark:border-borders-dark lg:border-b-4 border-b-2 rounded-lg md:p-8 p-[14px]"
+    >
       <div className="w-full flex md:flex-row flex-col gap-2 items-start justify-between md:gap-0  md:items-center border-b border-backgroundLight dark:border-borders-dark   pb-5">
         <div className="bg-backgroundDark dark:bg-backgroundLight lg:text-lg w-fit lg:py-2 lg:px-12 py-2 px-4 text-backgroundLight dark:text-backgroundDark rounded-lg">
           Step {stepNum}.
@@ -46,6 +53,6 @@ export default function StepCard({
           <span className="text-xs lg:text-sm "> {stepTime}</span>
         </span>
       </div>
-    </div>
+    </motion.div>
   );
 }
