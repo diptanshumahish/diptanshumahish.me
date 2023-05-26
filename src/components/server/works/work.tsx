@@ -29,6 +29,7 @@ export default function Work() {
               "The official website Of Warriors's Group LLC. This website is meant to attract potential customers needing staffing and recruitment solutions to get their technical and non technical solutions with  ease.",
             imageLink: "/logos/wg.png",
             liveLink: "",
+            mobImage: "/logos/wgbanner.png",
             technologies: "Nextjs, CSS, Formsubmit",
             colors: ["#220839", "#c89c5c", "#7d4aaa"],
             type: "Client Project",
@@ -37,8 +38,9 @@ export default function Work() {
             name: "IRA Future Solutions Website",
             date: "4th March, 2023",
             details:
-              "IRAFS is a cutting-edge online platform designed to revolutionize the staff recruitment and hiring process. It serves as a comprehensive solution for businesses seeking top talent and job seekers looking for exciting career opportunities. With its user-friendly interface and advanced features, IRAFS aims to streamline and simplify the hiring process for employers and candidates alike.",
+              "IRAFS is a cutting-edge online platform designed to revolutionize the staff recruitment and hiring process.simplify the hiring process for employers and candidates alike.",
             imageLink: "/logos/irafs.png",
+            mobImage: "/logos/iramob.png",
             liveLink: "https://irafs.com/",
             technologies: "Nextjs, Tailwind, Formsubmit",
             colors: ["#559a55", "#6e6e6e"],
@@ -55,6 +57,7 @@ export default function Work() {
             technologies: "Flutter, Unsplash",
             colors: ["#472078", "#f3cfcf"],
             type: "Personal Project",
+            mobImage: "/logos/wallpupsbanner.png",
           },
           {
             name: "Warrior's Group Work Application",
@@ -66,6 +69,7 @@ export default function Work() {
             technologies: "Nextjs, Tailwind, Firebase, Sendgrid API",
             colors: ["#220839", "#c89c5c"],
             type: "Client Project",
+            mobImage: "/logos/wgbanner.png",
           },
         ]}
       />

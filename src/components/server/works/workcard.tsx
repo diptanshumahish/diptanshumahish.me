@@ -8,6 +8,7 @@ interface Props {
   technologies: string;
   details: string;
   imageLink: string;
+  mobImage: string;
   liveLink: string;
   date: string;
   type: string;
@@ -21,6 +22,7 @@ export default function Workcard({
   liveLink,
   name,
   technologies,
+  mobImage,
   colors,
   type,
 }: Props) {
@@ -41,17 +43,22 @@ export default function Workcard({
             {technologies}
           </span>
         </div>
-        <div className="w-full flex justify-between lg:items-center lg:flex-row flex-col-reverse lg:gap-0 gap-2 ">
-          <p className="lg:w-[60%]  text-xs lg:text-lg">{details}</p>
-          <div className="lg:w-[20%] w-[30%]">
+        <div className="w-full flex justify-between lg:items-center lg:flex-row flex-col-reverse lg:gap-0 gap-3 ">
+          <p className="lg:w-[60%]  text-xs lg:text-lg lg:border-none border dark:border-borders-dark rounded-sm p-2 lg:p-0 ">
+            {details}
+          </p>
+          <div className="lg:w-[20%] hidden lg:block">
             <WorkImage imageLink={imageLink} />
+          </div>
+          <div className="lg:hidden w-full">
+            <WorkImage imageLink={mobImage} />
           </div>
         </div>
         <div className="flex gap-2">
           {colors.map((ele, idx) => {
             return (
               <span
-                className={`h-8 w-8 rounded-full  flex border`}
+                className={`lg:h-8 lg:w-8 w-4 h-4 rounded-full  flex border`}
                 style={{ backgroundColor: `${ele}` }}
                 key={idx}
               />

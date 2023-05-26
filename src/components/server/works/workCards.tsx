@@ -11,6 +11,7 @@ interface Props {
     imageLink: string;
     liveLink: string;
     date: string;
+    mobImage: string;
     type: string;
     colors: string[];
   }[];
@@ -24,6 +25,7 @@ export default function WorkCards({ cards }: Props) {
           return (
             <Workcard
               date={ele.date}
+              mobImage={ele.mobImage}
               type={ele.type}
               details={ele.details}
               imageLink={ele.imageLink}
