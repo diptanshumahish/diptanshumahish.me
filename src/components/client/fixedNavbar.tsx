@@ -38,6 +38,7 @@ export default function FixedNavbar() {
             onClick={() => {
               document.getElementById("mobNav")?.classList.add("hidden");
               document.body.classList.remove("overflow-hidden");
+              document.body.classList.remove("max-h-screen");
             }}
           >
             <XCircle />
@@ -145,6 +146,7 @@ export default function FixedNavbar() {
             document.getElementById("mobNav")?.classList.remove("hidden");
             document.getElementById("mobNav")?.classList.add("flex");
             document.body.classList.add("overflow-hidden");
+            document.body.classList.add("max-h-screen");
           }}
         >
           <List />
