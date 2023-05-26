@@ -31,7 +31,7 @@ export default function Workcard({
       initial={{ opacity: 0.5 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.1 }}
-      className=" hidden-scroll overflow-hidden relative snap-center snap-always border border-backgroundDark dark:border-borders-dark lg:p-6 p-2 lg:min-w-[60%] lg:max-w-[60%] min-w-full z-20  rounded-md  flex flex-col justify-between  "
+      className=" hidden-scroll overflow-hidden relative snap-center snap-always border border-backgroundDark dark:border-borders-dark lg:p-6 p-2 lg:min-w-[60%] lg:max-w-[60%] lg:h-unset h-min min-w-full z-20  rounded-md  flex flex-col justify-between  "
     >
       <div className="absolute top-0 right-0 p-2 bg-main-theme text-backgroundDark lg:text-md text-xs  border-l border-b">
         {type}
