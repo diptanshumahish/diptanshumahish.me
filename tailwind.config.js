@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         "navDesk": "2fr 4fr 2fr",
-        "navMob":"4fr 2fr"
+        "navMob":"8fr 1.5fr"
       },
       width: {
         "unset":"unset"

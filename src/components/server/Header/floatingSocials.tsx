@@ -7,7 +7,7 @@ const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
 export default function FloatingSocials() {
   return (
     <div
-      className={`${annie.className} transition-colors z-50 bg-backgroundLight dark:bg-backgroundDark dark:text-backgroundLight  fixed lg:top-28 top-14 right-2 lg:right-10 flex border py-2 px-4 border-b-2 dark:border-borders-dark lg:text-[20px] text-[12px] rounded-md gap-6 `}
+      className={`${annie.className} transition-colors z-40 bg-backgroundLight dark:bg-backgroundDark dark:text-backgroundLight  fixed lg:top-28 top-20 right-2 lg:right-10 flex border py-2 px-4 border-b-2 dark:border-borders-dark lg:text-[20px] text-[12px] rounded-md gap-6 `}
     >
       <Link
         href="https://www.instagram.com/_diptanshuu_/"

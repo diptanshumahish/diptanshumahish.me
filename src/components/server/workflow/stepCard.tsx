@@ -37,7 +37,7 @@ export default function StepCard({
         {stepDet}
       </div>
       <div>
-        <span className="bg-main-theme px-4 py-2 rounded-lg border flex md:flex-row flex-col ">
+        <span className="bg-main-theme px-4 py-2 rounded-lg border  lg:gap-2 flex md:flex-row flex-col ">
           <span className="font-bold lg:text-xs">Time I spend on this :</span>
           <span className="lg:text-xs"> {stepTime}</span>
         </span>
