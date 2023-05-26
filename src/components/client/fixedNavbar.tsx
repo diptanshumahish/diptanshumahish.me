@@ -55,7 +55,6 @@ export default function FixedNavbar() {
                 window.document.body.classList.add("dark");
                 localStorage.setItem("themeMode", "true");
               }
-
               if (localStorage.getItem("themeMode") === null) {
                 document.body.classList.add("dark");
                 localStorage.setItem("themeMode", "true");

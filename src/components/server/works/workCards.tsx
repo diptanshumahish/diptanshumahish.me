@@ -17,9 +17,19 @@ interface Props {
 export default function WorkCards({ cards }: Props) {
   return (
     <>
-      <motion.div className="flex relative  gap-2 overflow-y-hidden z-10 snap-mandatory hidden-scroll snap-x  snap-start">
+      <motion.div className="flex relative  lg:gap-10 gap-2 overflow-y-hidden z-10 snap-mandatory hidden-scroll snap-x  snap-start">
         {cards.map((ele, idx) => {
-          return <Workcard key={idx} />;
+          return (
+            <Workcard
+              date={ele.date}
+              details={ele.details}
+              imageLink={ele.imageLink}
+              liveLink={ele.liveLink}
+              name={ele.name}
+              technologies={ele.technologies}
+              key={idx}
+            />
+          );
         })}
       </motion.div>
     </>

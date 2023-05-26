@@ -9,7 +9,7 @@ export default function Work() {
           <span>Some of my </span>
           <span className="lg:text-3xl font-bold">Selected Works</span>
         </div>
-        <button className="bg-backgroundDark w-auto rounded-md flex lg:p-2 lg:px-4 text-backgroundLight justify-center">
+        <button className="bg-backgroundDark w-auto rounded-md flex lg:p-2 lg:px-4 p-2 text-backgroundLight justify-center">
           <span>More</span>
         </button>
       </div>
