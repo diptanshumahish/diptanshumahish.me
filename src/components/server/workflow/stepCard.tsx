@@ -20,7 +20,7 @@ export default function StepCard({
   stepTime,
 }: Props) {
   return (
-    <div className="w-full flex flex-col gap-4 border border-backgroundDark dark:border-borders-dark lg:border-b-4 border-b-2 rounded-lg p-8">
+    <div className="w-full flex flex-col gap-4 border border-backgroundDark dark:border-borders-dark lg:border-b-4 border-b-2 rounded-lg md:p-8 p-[14px]">
       <div className="w-full flex md:flex-row flex-col gap-2 items-start justify-between md:gap-0  md:items-center border-b border-backgroundLight dark:border-borders-dark   pb-5">
         <div className="bg-backgroundDark dark:bg-backgroundLight lg:text-xl w-fit lg:py-4 lg:px-16 py-2 px-4 text-backgroundLight dark:text-backgroundDark rounded-lg">
           Step {stepNum}.
