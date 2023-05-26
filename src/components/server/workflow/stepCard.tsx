@@ -27,8 +27,10 @@ export default function StepCard({
           Step {stepNum}.
         </div>
         <div className=" flex flex-col md:items-end text-backgroundDark  bg-sec-theme p-2 px-4 rounded-md border dark:border-borders-dark">
-          <span className="font-bold lg:text-xl">{stepName}</span>
-          <span className={`${annie.className} text-xl`}>{stepSub}</span>
+          <span className="font-bold lg:text-xl text-sm">{stepName}</span>
+          <span className={`${annie.className} lg:text-xl text-sm`}>
+            {stepSub}
+          </span>
         </div>
       </div>
       <StepCardImage imageLink={stepImage} />
@@ -38,8 +40,10 @@ export default function StepCard({
       </div>
       <div>
         <span className="bg-main-theme px-4 py-2 rounded-lg border  lg:gap-2 flex md:flex-row flex-col ">
-          <span className="font-bold lg:text-xs">Time I spend on this :</span>
-          <span className="lg:text-xs"> {stepTime}</span>
+          <span className="font-bold lg:text-sm text-xs">
+            Time I spend on this :
+          </span>
+          <span className="text-xs lg:text-sm "> {stepTime}</span>
         </span>
       </div>
     </div>
