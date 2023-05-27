@@ -5,7 +5,7 @@ const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
 
 export default function Work() {
   return (
-    <div className="w-full lg:p-10 p-5 flex flex-col gap-4 text-backgroundDark dark:text-backgroundLight">
+    <div className="w-full lg:p-10 p-5 flex flex-col gap-8 text-backgroundDark dark:text-backgroundLight">
       <div className="w-full flex justify-between items-center">
         <div className="w-full flex flex-col ">
           <span className="w-[20%] lg:hidden h-[2px] rounded-md bg-backgroundDark dark:bg-backgroundLight my-2"></span>
@@ -31,7 +31,7 @@ export default function Work() {
             imageLink: "/logos/wg.png",
             liveLink: "https://warriorsgrp.com/",
             mobImage: "/logos/wgbanner.png",
-            technologies: "Nextjs, CSS, Formsubmit",
+            technologies: ["NEXTJS", "CSS", "FORMSUBMIT"],
             colors: ["#220839", "#c89c5c", "#7d4aaa"],
             type: "Client Project",
             invert: true,
@@ -44,7 +44,7 @@ export default function Work() {
             imageLink: "/logos/irafs.png",
             mobImage: "/logos/iramob.png",
             liveLink: "https://irafs.com/",
-            technologies: "Nextjs, Tailwind, Formsubmit",
+            technologies: ["NEXTJS", "TAILWIND", "FORMSUBMIT"],
             colors: ["#559a55", "#6e6e6e"],
             type: "Client Project",
           },
@@ -56,10 +56,10 @@ export default function Work() {
             imageLink: "/logos/wallpups.png",
             liveLink:
               "https://play.google.com/store/apps/details?id=com.diptanshumahish.wallpups",
-            technologies: "Flutter, Unsplash",
+            technologies: ["FLUTTER", "UNSPLASH"],
             colors: ["#472078", "#f3cfcf"],
             type: "Personal Project",
-            mobImage: "/logos/wallpupsbanner.png",
+            mobImage: "/logos/wallpups.png",
           },
           {
             name: "Warrior's Group Work Application",
@@ -68,7 +68,7 @@ export default function Work() {
               "One of the most complex web apps I have made till now. This application serves as a major backbone in the company. It basically handles the working of the company, tracks employees working hours, scores and maintains a leaderboard. This application also allows employees to send multiple forms and do mass mailing",
             imageLink: "/logos/wgpwa.png",
             liveLink: "",
-            technologies: "Nextjs, Tailwind, Firebase, Sendgrid API",
+            technologies: ["NEXTJS", "TAILWIND", "FIREBASE", "SENDGRID"],
             colors: ["#220839", "#c89c5c"],
             type: "Client Project",
             mobImage: "/logos/wgbanner.png",

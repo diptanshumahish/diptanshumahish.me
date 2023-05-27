@@ -6,7 +6,7 @@ import { CaretCircleRight } from "@phosphor-icons/react";
 interface Props {
   cards: {
     name: string;
-    technologies: string;
+    technologies: string[];
     details: string;
     imageLink: string;
     liveLink: string;

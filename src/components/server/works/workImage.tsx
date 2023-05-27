@@ -24,7 +24,7 @@ export default function WorkImage({ imageLink, invert = false }: Props) {
         alt="step 1"
         className={`w-full h-auto ${
           invert ? "dark:invert" : ""
-        }  max-h-0 transition-transform duration-500 `}
+        }  max-h-0 transition-transform  rounded-md duration-500 aspect-square object-cover `}
         onLoadingComplete={(image) => {
           setLoader(false);
           image.classList.remove("max-h-0");

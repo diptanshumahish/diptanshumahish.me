@@ -5,7 +5,7 @@ import LinkItems from "./linkItems";
 import { motion } from "framer-motion";
 interface Props {
   name: string;
-  technologies: string;
+  technologies: string[];
   details: string;
   imageLink: string;
   mobImage: string;
@@ -33,20 +33,30 @@ export default function Workcard({
       initial={{ opacity: 0.5 }}
       whileInView={{ opacity: 1 }}
       transition={{ delay: 0.1 }}
-      className=" hidden-scroll overflow-hidden relative snap-center snap-always border border-backgroundDark dark:border-borders-dark lg:p-6 p-2 lg:min-w-[60%] lg:max-w-[60%] lg:h-unset h-min min-w-full z-20  rounded-md  flex flex-col justify-between  "
+      className=" hidden-scroll overflow-hidden relative snap-center snap-always border border-backgroundDark dark:border-borders-dark lg:p-6 p-2  lg:min-w-[60%] lg:max-w-[60%] lg:h-unset h-min min-w-full z-20  rounded-md  flex flex-col justify-between  "
     >
       <div className="absolute top-0 right-0 p-2 bg-main-theme text-backgroundDark lg:text-md text-xs  border-l border-b">
         {type}
       </div>
-      <div className="lg:gap-4 gap-3 flex flex-col pb-2 ">
+      <div className="lg:gap-4 gap-6 flex flex-col pb-2 ">
         <h3 className="lg:text-2xl font-bold w-[70%]">{name}</h3>
         <div className="">
-          <span className="border  b p-2  rounded-sm lg:text-xl text-xs">
-            {technologies}
+          <span className="flex gap-2  rounded-sm lg:text-xl text-xs">
+            {technologies.map((ele, idx) => {
+              return (
+                <span
+                  className="bg-sec-theme tracking-wider dark:bg py-1  lg:px-4 lg:rounded-md px-2 rounded-sm text-backgroundDark border"
+                  key={idx}
+                >
+                  {ele}
+                </span>
+              );
+            })}
           </span>
         </div>
         <div className="w-full flex justify-between lg:items-center lg:flex-row flex-col-reverse lg:gap-0 gap-3 ">
-          <p className="lg:w-[60%]  text-xs lg:text-lg lg:border-none border dark:border-borders-dark rounded-sm p-2 lg:p-0 ">
+          <p className="lg:w-[60%] flex flex-col  text-xs lg:text-lg lg:border-none border dark:border-borders-dark rounded-sm p-2 lg:p-0 ">
+            <span className="font-bold">About the website</span>
             {details}
           </p>
           <div className="lg:w-[20%] hidden lg:block">
