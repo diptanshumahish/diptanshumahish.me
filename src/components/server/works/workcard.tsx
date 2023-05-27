@@ -12,6 +12,7 @@ interface Props {
   liveLink: string;
   date: string;
   type: string;
+  invert?: boolean;
   colors: string[];
 }
 
@@ -25,6 +26,7 @@ export default function Workcard({
   mobImage,
   colors,
   type,
+  invert = false,
 }: Props) {
   return (
     <motion.div
@@ -48,13 +50,13 @@ export default function Workcard({
             {details}
           </p>
           <div className="lg:w-[20%] hidden lg:block">
-            <WorkImage imageLink={imageLink} />
+            <WorkImage imageLink={imageLink} invert={invert} />
           </div>
           <div className="lg:hidden w-full">
-            <WorkImage imageLink={mobImage} />
+            <WorkImage imageLink={mobImage} invert={invert} />
           </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 lg:pb-2 pb-1">
           {colors.map((ele, idx) => {
             return (
               <span
@@ -66,7 +68,7 @@ export default function Workcard({
           })}
         </div>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col lg:gap-4 gap-2">
         <hr />
         <LinkItems date={date} link={liveLink} />
       </div>

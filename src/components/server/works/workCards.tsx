@@ -13,6 +13,7 @@ interface Props {
     date: string;
     mobImage: string;
     type: string;
+    invert?:boolean;
     colors: string[];
   }[];
 }
@@ -33,6 +34,7 @@ export default function WorkCards({ cards }: Props) {
               name={ele.name}
               technologies={ele.technologies}
               colors={ele.colors}
+              invert={ele.invert}
               key={idx}
             />
           );

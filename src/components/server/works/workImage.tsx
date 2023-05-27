@@ -4,9 +4,10 @@ import Image from "next/image";
 import { BarLoader } from "react-spinners";
 interface Props {
   imageLink: string;
+  invert?: boolean;
 }
 
-export default function WorkImage({ imageLink }: Props) {
+export default function WorkImage({ imageLink, invert = false }: Props) {
   const [showLoader, setLoader] = useState(true);
   return (
     <>
@@ -21,7 +22,9 @@ export default function WorkImage({ imageLink }: Props) {
         width={720}
         height={200}
         alt="step 1"
-        className="w-full h-auto dark:invert max-h-0 transition-transform duration-500 "
+        className={`w-full h-auto ${
+          invert ? "dark:invert" : ""
+        }  max-h-0 transition-transform duration-500 `}
         onLoadingComplete={(image) => {
           setLoader(false);
           image.classList.remove("max-h-0");

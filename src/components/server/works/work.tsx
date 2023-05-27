@@ -8,13 +8,14 @@ export default function Work() {
     <div className="w-full lg:p-10 p-5 flex flex-col gap-4 text-backgroundDark dark:text-backgroundLight">
       <div className="w-full flex justify-between items-center">
         <div className="w-full flex flex-col ">
+          <span className="w-[20%] lg:hidden h-[2px] rounded-md bg-backgroundDark dark:bg-backgroundLight my-2"></span>
           <span>Some of my </span>
-          <span className="lg:text-3xl font-bold">Selected Works</span>
+          <span className="text-4xl font-bold">Selected Works</span>
           <span className={`${annie.className} lg:text-2xl`}>
             Scroll to see more
           </span>
         </div>
-        <button className="bg-backgroundDark w-auto rounded-md flex lg:p-2 lg:px-4 p-2 text-backgroundLight justify-center">
+        <button className="bg-backgroundDark dark:bg-backgroundLight dark:text-backgroundDark w-auto rounded-md flex lg:p-2 lg:px-4 p-1 px-4 text-backgroundLight justify-center">
           <span>More</span>
         </button>
       </div>
@@ -33,6 +34,7 @@ export default function Work() {
             technologies: "Nextjs, CSS, Formsubmit",
             colors: ["#220839", "#c89c5c", "#7d4aaa"],
             type: "Client Project",
+            invert: true,
           },
           {
             name: "IRA Future Solutions Website",
