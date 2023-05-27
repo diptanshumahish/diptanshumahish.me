@@ -1,8 +1,9 @@
 import { Metadata } from "next";
 import "../styles/globals.css";
 import { Anybody } from "next/font/google";
-import { NavbarWrapper } from "@/components";
+import { NavbarWrapper,Footer } from "@/components";
 import Providers from "../api-fetch/providers";
+
 
 const anyobody = Anybody({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Providers>
           <NavbarWrapper />
           <div className="lg:pt-[76px] pt-[46px] ">{children}</div>
+          <Footer/>
         </Providers>
       </body>
     </html>

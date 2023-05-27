@@ -12,7 +12,7 @@ export default function Work() {
           <span>Some of my </span>
           <span className="text-4xl font-bold">Selected Works</span>
           <span className={`${annie.className} lg:text-2xl`}>
-            Scroll to see more
+            scroll / swipe to see more
           </span>
         </div>
         <button className="bg-backgroundDark dark:bg-backgroundLight dark:text-backgroundDark w-auto rounded-md flex lg:p-2 lg:px-4 p-1 px-4 text-backgroundLight justify-center">
