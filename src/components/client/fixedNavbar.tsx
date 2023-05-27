@@ -44,7 +44,7 @@ export default function FixedNavbar() {
             <XCircle />
           </button>
         </div>
-        <div className="flex flex-col hover:bg-main-theme ">
+        <div className="flex flex-col  ">
           <button
             className="flex justify-between w-full items-center border-y p-2"
             onClick={() => {
