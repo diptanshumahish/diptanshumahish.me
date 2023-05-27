@@ -45,7 +45,7 @@ export default function Workcard({
             {technologies.map((ele, idx) => {
               return (
                 <span
-                  className="bg-sec-theme tracking-wider dark:bg py-1  lg:px-4 lg:rounded-md px-2 rounded-sm text-backgroundDark border"
+                  className="bg-sec-theme tracking-wider dark:bg py-1  lg:px-4 rounded-md px-2  text-backgroundDark border"
                   key={idx}
                 >
                   {ele}
@@ -55,8 +55,8 @@ export default function Workcard({
           </span>
         </div>
         <div className="w-full flex justify-between lg:items-center lg:flex-row flex-col-reverse lg:gap-0 gap-3 ">
-          <p className="lg:w-[60%] flex flex-col  text-xs lg:text-lg lg:border-none border dark:border-borders-dark rounded-sm p-2 lg:p-0 ">
-            <span className="font-bold">About the website</span>
+          <p className="lg:w-[60%] flex flex-col gap-1  text-xs lg:text-lg py-2 ">
+            <span className="font-bold text-[16px]">About the website</span>
             {details}
           </p>
           <div className="lg:w-[20%] hidden lg:block">

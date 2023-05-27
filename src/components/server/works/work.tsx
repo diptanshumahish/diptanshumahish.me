@@ -34,7 +34,6 @@ export default function Work() {
             technologies: ["NEXTJS", "CSS", "FORMSUBMIT"],
             colors: ["#220839", "#c89c5c", "#7d4aaa"],
             type: "Client Project",
-            invert: true,
           },
           {
             name: "IRA Future Solutions Website",
