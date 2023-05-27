@@ -48,12 +48,12 @@ export default function Skills() {
           </div>
         </div>
         <Image
-          src="/logos/randomLogos.png"
+          src="/logos/randomLogos.svg"
           width={600}
           height={600}
           alt="random brand logos"
           className="lg:w-[40%] lg
-          :opacity-100 opacity-30  z-0 h-auto absolute right-0 dark:invert object-cover"
+          :opacity-100 opacity-20  z-0 h-[80%] absolute right-0 dark:invert object-cover"
         />
       </div>
     </div>
