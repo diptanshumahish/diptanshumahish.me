@@ -12,7 +12,7 @@ export default function StepCardImage({ imageLink }: Props) {
     <>
       {showLoader && (
         <div className="w-full flex items-center justify-center">
-          <BarLoader className="text-backgroundDark" />
+          <BarLoader className="dark:invert" />
         </div>
       )}
 

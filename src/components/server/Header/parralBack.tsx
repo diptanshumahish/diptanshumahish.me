@@ -5,7 +5,7 @@ import { useScroll, useTransform, motion } from "framer-motion";
 
 export default function ParralBack() {
   let { scrollYProgress } = useScroll();
-  let par = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+  let par = useTransform(scrollYProgress, [0, 1], ["0%", "90%"]);
   return (
     <motion.span
       style={{ y: par }}

@@ -29,7 +29,7 @@ export default function Work() {
             details:
               "The official website Of Warriors's Group LLC. This website is meant to attract potential customers needing staffing and recruitment solutions to get their technical and non technical solutions with  ease.",
             imageLink: "/logos/wg.png",
-            liveLink: "",
+            liveLink: "https://warriorsgrp.com/",
             mobImage: "/logos/wgbanner.png",
             technologies: "Nextjs, CSS, Formsubmit",
             colors: ["#220839", "#c89c5c", "#7d4aaa"],

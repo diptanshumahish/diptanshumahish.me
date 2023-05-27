@@ -44,7 +44,7 @@ export default function FixedNavbar() {
             <XCircle />
           </button>
         </div>
-        <div className="flex flex-col ">
+        <div className="flex flex-col hover:bg-main-theme ">
           <button
             className="flex justify-between w-full items-center border-y p-2"
             onClick={() => {
@@ -66,18 +66,34 @@ export default function FixedNavbar() {
               <Sun />
             </span>
           </button>
-          <button className="flex justify-between w-full items-center border-b p-2">
+          <Link
+            href="/work"
+            onClick={() => {
+              document.getElementById("mobNav")?.classList.add("hidden");
+              document.body.classList.remove("overflow-hidden");
+              document.body.classList.remove("max-h-screen");
+            }}
+            className="flex justify-between w-full items-center border-b p-2"
+          >
             <span>My works</span>
             <span>
               <Briefcase />
             </span>
-          </button>
-          <button className="flex justify-between w-full items-center border-b p-2">
+          </Link>
+          <Link
+            href="/contact"
+            onClick={() => {
+              document.getElementById("mobNav")?.classList.add("hidden");
+              document.body.classList.remove("overflow-hidden");
+              document.body.classList.remove("max-h-screen");
+            }}
+            className="flex justify-between w-full items-center border-b p-2"
+          >
             <span>Contact Me</span>
             <span>
               <Handshake />
             </span>
-          </button>
+          </Link>
         </div>
       </div>
       <nav className=" transition-colors grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-borders-dark text-backgroundDark dark:text-backgroundLight ">
@@ -133,11 +149,19 @@ export default function FixedNavbar() {
             <Sun className="hidden lg:block dark:rotate-90 transition-transform" />
             <span>Theme</span>
           </button>
-          <button className="border-backgroundDark dark:border-borders-dark border-0 hover:bg-main-theme  border-r flex flex-col items-center justify-center ">
+          <Link
+            href="/work"
+            className="border-backgroundDark dark:border-borders-dark border-0 hover:bg-main-theme  border-r flex flex-col items-center justify-center "
+          >
             <Briefcase className="hidden lg:block" />
             <span>Works</span>
-          </button>
-          <button className="hover:bg-main-theme">Contact</button>
+          </Link>
+          <Link
+            href="/contact"
+            className="hover:bg-main-theme flex items-center justify-center"
+          >
+            Contact
+          </Link>
         </div>
         <button
           className="flex items-center  justify-center md:hidden"

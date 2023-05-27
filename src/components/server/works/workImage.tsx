@@ -13,7 +13,7 @@ export default function WorkImage({ imageLink, invert = false }: Props) {
     <>
       {showLoader && (
         <div className="w-full flex items-center justify-center">
-          <BarLoader className="text-backgroundDark" />
+          <BarLoader className="dark:invert" />
         </div>
       )}
 
