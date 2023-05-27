@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 const queryClient = new QueryClient();
 export default function Providers({ children }: React.PropsWithChildren) {
-  var tempScroll: number = window.scrollY;
+  var tempScroll: number = 0;
   useEffect(() => {
     const theme = localStorage.getItem("themeMode");
     if (theme === "true") {
