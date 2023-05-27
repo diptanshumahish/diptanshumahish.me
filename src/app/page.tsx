@@ -1,4 +1,4 @@
-import { Header, Work, Workflow } from "@/components";
+import { Header, Skills, Work, Workflow } from "@/components";
 
 export default async function Home() {
   return (
@@ -6,6 +6,7 @@ export default async function Home() {
       <Header />
       <Work />
       <Workflow />
+      <Skills />
     </main>
   );
 }

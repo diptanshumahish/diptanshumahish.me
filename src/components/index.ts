@@ -5,6 +5,7 @@ import FanctText from "./server/FancyTexts/fancy-text";
 import FloatingSocials from "./server/Header/floatingSocials";
 import Workflow from "./workflow/workflow";
 import Work from "./server/works/work";
+import Skills from "./server/Skiils/Skills";
 
 export {
   Header,
@@ -13,5 +14,6 @@ export {
   FanctText,
   FloatingSocials,
   Workflow,
-  Work
+  Work,
+  Skills
 };
