@@ -12,7 +12,7 @@ export default function Skills() {
         <span>Here are my </span>
         <span className="text-4xl font-bold">Skills (Tech / Non Tech)</span>
         <span className={`${annie.className} lg:text-2xl`}>
-          "I just get the job done!"
+          &quot;I just get the job done!&quot;
         </span>
       </div>
 
