@@ -44,13 +44,12 @@ export default function Header() {
         <FloatingSocials />
         <ParralBack />
         <div className="z-10 text-backgroundDark dark:text-backgroundLight flex flex-col lg:text-3xl text-[20px] lg:leading-tight">
-          <span>Hey there,</span>
-          <span>
-            I&apos;m{" "}
+          Hey there, I&apos;m{" "}
+          <h1>
             <Link className="lg:text-4xl text-[30px]  font-bold" href="">
               Diptanshu Mahish.
             </Link>
-          </span>
+          </h1>
           <p className={`${annie.className} lg:text-3xl text-xl lg:py-2`}>
             A <span className="underline">Front-end developer</span>, a{" "}
             <span className="underline">UI/UX designer</span>, a musician, a

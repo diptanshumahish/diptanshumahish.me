@@ -164,6 +164,7 @@ export default function FixedNavbar() {
           </Link>
         </div>
         <button
+        name="Menu Icon"
           className="flex items-center  justify-center md:hidden"
           onClick={() => {
             document.getElementById("mobNav")?.classList.remove("hidden");

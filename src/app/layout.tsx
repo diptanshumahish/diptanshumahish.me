@@ -7,9 +7,9 @@ import Providers from "../api-fetch/providers";
 const anyobody = Anybody({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Diptanshu Mahish",
+  title: "Diptanshu Mahish | Portfolio",
   description:
-    "Diptanshu Mahish | Portfolio website. I'm a web and app development enthusiast. With a touch of amazing designs, I want to make the web and app experience seamless",
+    "Diptanshu Mahish | Portfolio website. I'm a web and app development enthusiast. ",
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",
@@ -40,17 +40,17 @@ export const metadata: Metadata = {
   },
   classification: "Portfolio Website",
   appleWebApp: true,
-  applicationName: "Diptanshu Mahish",
+  applicationName: "Diptanshu Mahish | Portfolio",
   openGraph: {
     type: "website",
     countryName: "India",
     emails: ["diptanshumahish2016@gmail.com"],
-    title: "Diptanshu Mahish",
+    title: "Diptanshu Mahish | Portfolio",
     url: "https://heydiptanshu.vercel.app",
     siteName: "Diptanshu Mahish",
     images: ["https://heydiptanshu.vercel.app/banner.png"],
     description:
-      "Diptanshu Mahish | Portfolio website. I'm a web and app development enthusiast. With a touch of amazing designs, I want to make the web and app experience seamless",
+      "Diptanshu Mahish | Portfolio website. I'm a web and app development enthusiast. ",
     determiner: "the",
     locale: "IN",
     alternateLocale: "US",
