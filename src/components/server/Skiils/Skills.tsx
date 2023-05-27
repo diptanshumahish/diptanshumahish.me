@@ -23,6 +23,7 @@ export default function Skills() {
             <TechSkills
               skills={[
                 "NEXT JS",
+                "TYPESCRIPT",
                 "REACT JS",
                 "FIGMA",
                 "JAVASCRIPT",
