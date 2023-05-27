@@ -6,6 +6,7 @@ import FloatingSocials from "./server/Header/floatingSocials";
 import Workflow from "./workflow/workflow";
 import Work from "./server/works/work";
 import Skills from "./server/Skiils/Skills";
+import Education from "./server/Education/Education";
 
 export {
   Header,
@@ -15,5 +16,6 @@ export {
   FloatingSocials,
   Workflow,
   Work,
-  Skills
+  Skills,
+  Education,
 };

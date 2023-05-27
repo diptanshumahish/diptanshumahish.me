@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <div className="w-full relative overflow-hidden lg:p-10 p-5 flex flex-col gap-4 text-backgroundDark dark:text-backgroundLight">
+    <div className="w-full relative  lg:p-10 p-5 flex flex-col gap-4 text-backgroundDark dark:text-backgroundLight">
       <div className="w-full flex flex-col ">
         <span className="w-[20%] lg:hidden h-[2px] rounded-md bg-backgroundDark dark:bg-backgroundLight my-2"></span>
         <span>Here are my </span>
@@ -53,7 +53,7 @@ export default function Skills() {
           height={600}
           alt="random brand logos"
           className="lg:w-[40%] lg
-          :opacity-100 opacity-20  z-0 h-[80%] absolute right-0 dark:invert object-cover"
+          :opacity-100 opacity-20  z-0 h-[80%] absolute right-0 dark:invert object-cover bg-fixed"
         />
       </div>
     </div>
