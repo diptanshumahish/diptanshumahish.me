@@ -1,7 +1,7 @@
 import { FanctText, FancyItems, FloatingSocials } from "@/components";
 import React from "react";
-import { Annie_Use_Your_Telescope } from "next/font/google";
-const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
+import { Anonymous_Pro } from "next/font/google";
+const annie = Anonymous_Pro({ subsets: ["latin"], weight: "400" });
 import Link from "next/link";
 import ParralBack from "./parralBack";
 
@@ -26,7 +26,7 @@ export default function Header() {
             <span className="lg:text-3xl text-xl  font-bold tracking-tight">
               Wanna work with me?
             </span>
-            <span className={`${annie.className} lg:text-2xl text-xl`}>
+            <span className={`${annie.className} lg:text-2xl text-lg`}>
               Drop a Hi maybe?{" "}
               <Link
                 href="/"
@@ -44,11 +44,11 @@ export default function Header() {
         <div className="z-10 text-backgroundDark dark:text-backgroundLight flex flex-col lg:text-3xl text-[20px] lg:leading-tight">
           Hey there, I&apos;m{" "}
           <h1>
-            <Link className="lg:text-4xl text-[30px]  font-bold" href="">
+            <Link className="lg:text-4xl text-[30px]  font-bold" href="/">
               Diptanshu Mahish.
             </Link>
           </h1>
-          <p className={`${annie.className} lg:text-3xl text-xl lg:py-2`}>
+          <p className={`${annie.className} lg:text-xl text-md lg:py-2`}>
             A <span className="underline">Front-end developer</span>, a{" "}
             <span className="underline">UI/UX designer</span>, a musician, a
             digital artist and much more. Besides coding all day, I read story

@@ -1,7 +1,7 @@
 import React from "react";
-import { Annie_Use_Your_Telescope } from "next/font/google";
+import { Anonymous_Pro } from "next/font/google";
 import TechSkills from "./TechSkills";
-const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
+const annie = Anonymous_Pro({ subsets: ["latin"], weight: "400" });
 import Image from "next/image";
 
 export default function Skills() {
@@ -11,7 +11,7 @@ export default function Skills() {
         <span className="w-[20%] lg:hidden h-[2px] rounded-md bg-backgroundDark dark:bg-backgroundLight my-2"></span>
         <span>Here are my </span>
         <span className="text-4xl font-bold">Skills (Tech / Non Tech)</span>
-        <span className={`${annie.className} lg:text-2xl`}>
+        <span className={`${annie.className} lg:text-xl`}>
           &quot;I just get the job done!&quot;
         </span>
       </div>

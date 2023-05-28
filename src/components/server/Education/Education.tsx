@@ -1,7 +1,7 @@
 import React from "react";
-import { Annie_Use_Your_Telescope } from "next/font/google";
+import { Itim, Anonymous_Pro } from "next/font/google";
 import Timeline from "./Timeline";
-const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
+const annie = Anonymous_Pro({ subsets: ["latin"], weight: "400" });
 
 export default function Education() {
   return (
@@ -10,7 +10,7 @@ export default function Education() {
         <span className="w-[20%] lg:hidden h-[2px] rounded-md bg-backgroundDark dark:bg-backgroundLight my-2"></span>
         <span>And about my </span>
         <span className="text-4xl font-bold">Academic Qualifications</span>
-        <span className={`${annie.className} lg:text-2xl`}>
+        <span className={`${annie.className} lg:text-xl`}>
           &quot;Not much though&quot;
         </span>
       </div>

@@ -16,8 +16,8 @@ import {
   FigmaLogo,
   MusicNote,
 } from "@phosphor-icons/react";
-import { Annie_Use_Your_Telescope } from "next/font/google";
-const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
+import { Anonymous_Pro } from "next/font/google";
+const annie = Anonymous_Pro({ subsets: ["latin"], weight: "400" });
 
 export default function FancyItems() {
   let { scrollYProgress } = useScroll();
@@ -39,7 +39,7 @@ export default function FancyItems() {
             <FigmaLogo />
             Figma
           </span>
-          <span className={`${annie.className} text-xl`}>Its love !</span>
+          <span className={`${annie.className} lg:text-xl`}>Its love !</span>
         </motion.div>
         <motion.div style={{ y: app }} className="col-span-2">
           <SmallBanners

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { Annie_Use_Your_Telescope } from "next/font/google";
-const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
+import { Anonymous_Pro } from "next/font/google";
+const annie = Anonymous_Pro({ subsets: ["latin"], weight: "400" });
 import { backIn, easeInOut, motion } from "framer-motion";
 import StepCardImage from "./stepCardImage";
 interface Props {

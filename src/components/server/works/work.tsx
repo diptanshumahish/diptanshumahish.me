@@ -1,7 +1,7 @@
 import React from "react";
 import WorkCards from "./workCards";
-import { Annie_Use_Your_Telescope } from "next/font/google";
-const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
+import { Anonymous_Pro } from "next/font/google";
+const annie = Anonymous_Pro({ subsets: ["latin"], weight: "400" });
 
 export default function Work() {
   return (
@@ -11,7 +11,7 @@ export default function Work() {
           <span className="w-[20%] lg:hidden h-[2px] rounded-md bg-backgroundDark dark:bg-backgroundLight my-2"></span>
           <span>Some of my </span>
           <span className="text-4xl font-bold">Selected Works</span>
-          <span className={`${annie.className} lg:text-2xl`}>
+          <span className={`${annie.className} lg:text-xl`}>
             scroll / swipe to see more
           </span>
         </div>
