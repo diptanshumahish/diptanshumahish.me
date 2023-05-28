@@ -14,11 +14,24 @@ export default function Providers({ children }: React.PropsWithChildren) {
 
     const handleScroll = () => {
       var currentScroll = window.scrollY;
-      if (tempScroll > currentScroll) {
-        document.getElementById("flt")?.classList.remove("hidden");
+
+      if (currentScroll <= 40) {
+        document.getElementById("NAV")?.classList.remove("bg-opacity-40");
+        document.getElementById("NAV")?.classList.remove("dark:bg-opacity-40");
       } else {
-        document.getElementById("flt")?.classList.add("hidden");
+        if (tempScroll > currentScroll) {
+          document.getElementById("flt")?.classList.remove("hidden");
+          document.getElementById("NAV")?.classList.remove("bg-opacity-40");
+          document
+            .getElementById("NAV")
+            ?.classList.remove("dark:bg-opacity-40");
+        } else {
+          document.getElementById("flt")?.classList.add("hidden");
+          document.getElementById("NAV")?.classList.add("bg-opacity-40");
+          document.getElementById("NAV")?.classList.add("dark:bg-opacity-40");
+        }
       }
+
       tempScroll = currentScroll;
     };
 

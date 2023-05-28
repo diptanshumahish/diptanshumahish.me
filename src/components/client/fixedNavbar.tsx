@@ -96,7 +96,11 @@ export default function FixedNavbar() {
           </Link>
         </div>
       </div>
-      <nav className=" transition-colors grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-borders-dark text-backgroundDark dark:text-backgroundLight ">
+      <nav
+        id="NAV"
+        className="   transition-colors grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-borders-dark text-backgroundDark dark:text-backgroundLight "
+        style={{ backdropFilter: "blur(15px)" }}
+      >
         {/* logo and branding  */}
         <div className="flex  items-center lg:justify-center border-backgroundDark dark:border-borders-dark border-0  border-r py-4  px-4 lg:py-2 ">
           <div className="flex items-center  lg:gap-5 gap-2">
@@ -164,7 +168,7 @@ export default function FixedNavbar() {
           </Link>
         </div>
         <button
-        name="Menu Icon"
+          name="Menu Icon"
           className="flex items-center  justify-center md:hidden"
           onClick={() => {
             document.getElementById("mobNav")?.classList.remove("hidden");

@@ -64,7 +64,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${anyobody.className} w-full   `}>
+      <body className={`${anyobody.className} w-full `}>
         <Providers>
           <NavbarWrapper />
           <div className="lg:pt-[76px] pt-[46px] ">{children}</div>
