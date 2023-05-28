@@ -1,7 +1,7 @@
 import React from "react";
-import { Annie_Use_Your_Telescope } from "next/font/google";
+import { Nanum_Pen_Script } from "next/font/google";
 import StepCard from "../server/workflow/stepCard";
-const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
+const annie = Nanum_Pen_Script({ subsets: ["latin"], weight: "400" });
 
 export default function Workflow() {
   return (

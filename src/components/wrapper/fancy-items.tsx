@@ -16,8 +16,8 @@ import {
   FigmaLogo,
   MusicNote,
 } from "@phosphor-icons/react";
-import { Annie_Use_Your_Telescope } from "next/font/google";
-const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
+import { Nanum_Pen_Script } from "next/font/google";
+const annie = Nanum_Pen_Script({ subsets: ["latin"], weight: "400" });
 
 export default function FancyItems() {
   let { scrollYProgress } = useScroll();

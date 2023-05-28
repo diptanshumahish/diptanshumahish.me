@@ -1,7 +1,7 @@
 import React from "react";
-import { Annie_Use_Your_Telescope } from "next/font/google";
+import { Itim, Nanum_Pen_Script } from "next/font/google";
 import Timeline from "./Timeline";
-const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
+const annie = Nanum_Pen_Script({ subsets: ["latin"], weight: "400" });
 
 export default function Education() {
   return (

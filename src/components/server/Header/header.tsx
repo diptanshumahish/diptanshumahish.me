@@ -1,7 +1,7 @@
 import { FanctText, FancyItems, FloatingSocials } from "@/components";
 import React from "react";
-import { Annie_Use_Your_Telescope } from "next/font/google";
-const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
+import { Nanum_Pen_Script } from "next/font/google";
+const annie = Nanum_Pen_Script({ subsets: ["latin"], weight: "400" });
 import Link from "next/link";
 import ParralBack from "./parralBack";
 

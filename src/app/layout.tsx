@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import "../styles/globals.css";
-import { Anybody } from "next/font/google";
+import { Karla } from "next/font/google";
 import { NavbarWrapper, Footer } from "@/components";
 import Providers from "../api-fetch/providers";
 
-const anyobody = Anybody({ subsets: ["latin"] });
+const anyobody = Karla({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Diptanshu Mahish | Portfolio",
@@ -75,4 +75,4 @@ export default function RootLayout({
     </html>
   );
 }
-``
+``;
