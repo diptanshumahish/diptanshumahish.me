@@ -29,8 +29,8 @@ export default function Header() {
             <span className={`${annie.className} lg:text-2xl text-lg`}>
               Drop a Hi maybe?{" "}
               <Link
-                href="/"
-                className="bg-main-theme px-4 text-backgroundDark rounded-md border border-backgroundDark hover:animate-bounce"
+                href="/contact"
+                className="bg-main-theme px-4 py-1 text-backgroundDark rounded-md border border-backgroundDark "
               >
                 Here !
               </Link>
