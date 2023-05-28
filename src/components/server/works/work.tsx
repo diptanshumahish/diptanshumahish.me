@@ -1,7 +1,7 @@
 import React from "react";
 import WorkCards from "./workCards";
-import { Nanum_Pen_Script } from "next/font/google";
-const annie = Nanum_Pen_Script({ subsets: ["latin"], weight: "400" });
+import { Anonymous_Pro } from "next/font/google";
+const annie = Anonymous_Pro({ subsets: ["latin"], weight: "400" });
 
 export default function Work() {
   return (

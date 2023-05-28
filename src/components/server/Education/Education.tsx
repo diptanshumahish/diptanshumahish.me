@@ -1,7 +1,7 @@
 import React from "react";
-import { Itim, Nanum_Pen_Script } from "next/font/google";
+import { Itim, Anonymous_Pro } from "next/font/google";
 import Timeline from "./Timeline";
-const annie = Nanum_Pen_Script({ subsets: ["latin"], weight: "400" });
+const annie = Anonymous_Pro({ subsets: ["latin"], weight: "400" });
 
 export default function Education() {
   return (

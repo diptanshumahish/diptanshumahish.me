@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { Nanum_Pen_Script } from "next/font/google";
-const annie = Nanum_Pen_Script({ subsets: ["latin"], weight: "400" });
+import { Anonymous_Pro } from "next/font/google";
+const annie = Anonymous_Pro({ subsets: ["latin"], weight: "400" });
 import { backIn, easeInOut, motion } from "framer-motion";
 import StepCardImage from "./stepCardImage";
 interface Props {

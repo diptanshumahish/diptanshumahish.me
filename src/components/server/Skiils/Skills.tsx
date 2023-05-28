@@ -1,7 +1,7 @@
 import React from "react";
-import { Nanum_Pen_Script } from "next/font/google";
+import { Anonymous_Pro } from "next/font/google";
 import TechSkills from "./TechSkills";
-const annie = Nanum_Pen_Script({ subsets: ["latin"], weight: "400" });
+const annie = Anonymous_Pro({ subsets: ["latin"], weight: "400" });
 import Image from "next/image";
 
 export default function Skills() {
