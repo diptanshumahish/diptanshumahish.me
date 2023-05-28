@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import "../styles/globals.css";
 import { Anybody } from "next/font/google";
 import { NavbarWrapper, Footer } from "@/components";
@@ -68,6 +69,7 @@ export default function RootLayout({
           <NavbarWrapper />
           <div className="lg:pt-[76px] pt-[46px] ">{children}</div>
           <Footer />
+          <Analytics />
         </Providers>
       </body>
     </html>
