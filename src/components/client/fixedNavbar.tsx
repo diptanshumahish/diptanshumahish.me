@@ -98,7 +98,7 @@ export default function FixedNavbar() {
       </div>
       <nav
         id="NAV"
-        className="   transition-colors grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-borders-dark text-backgroundDark dark:text-backgroundLight "
+        className=" transition-colors grid grid-cols-navMob lg:grid-cols-navDesk  bg-backgroundLight border-backgroundDark  border-0 border-b dark:bg-backgroundDark dark:border-borders-dark text-backgroundDark dark:text-backgroundLight "
         style={{ backdropFilter: "blur(15px)" }}
       >
         {/* logo and branding  */}
