@@ -47,7 +47,9 @@ export default function TimeLineCard({
           <span className="lg:text-xl text-xs font-bold text-main-theme">
             {date}
           </span>
-          <p className="text-left tracking-wider lg:text-md text-xs">{data}</p>
+          <p className="text-left tracking-wider lg:text-[16px] text-xs">
+            {data}
+          </p>
           <span className="lg:text-sm font-bold tracking-wider text-xs text-right">
             Grade | {grades}
           </span>
@@ -67,7 +69,9 @@ export default function TimeLineCard({
         <span className="lg:text-xl text-xs font-bold text-right text-main-theme">
           {date}
         </span>
-        <p className="text-right tracking-wider lg:text-md text-xs">{data}</p>
+        <p className="text-right tracking-wider lg:text-[16px] text-xs">
+          {data}
+        </p>
         {grades !== undefined && (
           <span className="lg:text-sm font-bold tracking-wider text-right text-xs">
             Grade | {grades}

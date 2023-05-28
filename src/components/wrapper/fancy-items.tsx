@@ -34,7 +34,7 @@ export default function FancyItems() {
           style={{ y: fig }}
           className="row-span-3 bg-sec-theme rounded-xl flex flex-col items-center justify-center border-2 border-backgroundDark dark:border-borders-dark border-b-4 lg:text-4xl"
         >
-          <span className="flex items-center">
+          <span className="flex items-center ">
             {" "}
             <FigmaLogo />
             Figma

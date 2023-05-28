@@ -29,8 +29,8 @@ export default function Header() {
             <span className={`${annie.className} lg:text-2xl text-lg`}>
               Drop a Hi maybe?{" "}
               <Link
-                href="/"
-                className="bg-main-theme px-4 text-backgroundDark rounded-md border border-backgroundDark hover:animate-bounce"
+                href="/contact"
+                className="bg-main-theme px-4 py-1 text-backgroundDark rounded-md border border-backgroundDark "
               >
                 Here !
               </Link>
@@ -49,8 +49,8 @@ export default function Header() {
             </Link>
           </h1>
           <p className={`${annie.className} lg:text-xl text-md lg:py-2`}>
-            A <span className="underline">Front-end developer</span>, a{" "}
-            <span className="underline">UI/UX designer</span>, a musician, a
+            A <span className=" font-bold">Front-end developer</span>, a{" "}
+            <span className=" font-bold">UI/UX designer</span>, a musician, a
             digital artist and much more. Besides coding all day, I read story
             books, listen to music or maybe sometimes you can find me out
             roaming here and there.

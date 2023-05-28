@@ -118,7 +118,7 @@ export default function FixedNavbar() {
           <div className="p-2  px-4 hidden lg:flex justify-between items-center border-backgroundDark border-0  border-r  dark:border-borders-dark">
             <span className="text-lg">{JSON.stringify(data?.[0].content)}</span>
             <span className="flex flex-col text-right">
-              <span className="font-semibold">quote of the day</span>
+              <span className="font-semibold">Quote of the day</span>
               <span className=" text-[12px]">{data?.[0].author}</span>
             </span>
           </div>
