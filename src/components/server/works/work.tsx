@@ -5,7 +5,7 @@ const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
 
 export default function Work() {
   return (
-    <div className="w-full lg:p-10 p-5 flex flex-col gap-8 text-backgroundDark dark:text-backgroundLight">
+    <div className="w-full py-20 lg:px-10 px-5  flex flex-col gap-8 text-backgroundDark dark:text-backgroundLight">
       <div className="w-full flex justify-between items-center">
         <div className="w-full flex flex-col ">
           <span className="w-[20%] lg:hidden h-[2px] rounded-md bg-backgroundDark dark:bg-backgroundLight my-2"></span>

@@ -4,13 +4,11 @@ import { Annie_Use_Your_Telescope } from "next/font/google";
 const annie = Annie_Use_Your_Telescope({ subsets: ["latin"], weight: "400" });
 import Link from "next/link";
 import ParralBack from "./parralBack";
-import DesParralBack from "./desParBack";
 
 export default function Header() {
   return (
     <div className="grid overflow-hidden  lg:grid-cols-2 md:grid-cols-1 min-h-[800px] lg:h-[92vh]  border-b border-backgroundDark dark:border-borders-dark ">
       <div className="overflow-hidden relative  border-0 lg:border-r border-b lg:border-b-0  h-[100vh] lg:h-auto dark:border-borders-dark  flex w-[100vw] lg:w-unset items-center justify-center flex-col gap-2 ">
-        <DesParralBack />
         <div className="absolute lg:top-0 lg:left-0 top-20 left-0 ">
           <span className="lg:p-10 p-4 flex flex-col text-backgroundDark dark:text-backgroundLight ">
             <span className="lg:text-3xl text-xl font-bold tracking-tight">
