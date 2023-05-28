@@ -56,7 +56,7 @@ export default function Workcard({
         </div>
         <div className="w-full flex justify-between lg:items-center lg:flex-row flex-col-reverse lg:gap-0 gap-3 ">
           <p className="lg:w-[60%] flex flex-col gap-1  text-xs lg:text-lg py-2 ">
-            <span className="font-bold text-[16px]">About the website</span>
+            <span className="font-bold text-[16px]">About the project</span>
             {details}
           </p>
           <div className="lg:w-[20%] hidden lg:block">

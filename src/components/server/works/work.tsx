@@ -24,6 +24,19 @@ export default function Work() {
       <WorkCards
         cards={[
           {
+            name: "Wallpups ",
+            date: "31st July, 2022",
+            details:
+              "Wallpups is a cute little wallpaper setting app. I made this app just as one of my first apps in FLutter. This app is available on Playstore as well. This app simply uses the random image generator and stores them in array and serves you amazing wallpapers. You can easily set the wallpapers on your devices.",
+            imageLink: "/logos/wallpups.png",
+            liveLink:
+              "https://play.google.com/store/apps/details?id=com.diptanshumahish.wallpups",
+            technologies: ["FLUTTER", "UNSPLASH"],
+            colors: ["#472078", "#f3cfcf"],
+            type: "Personal Project",
+            mobImage: "/logos/wallpups.png",
+          },
+          {
             name: "Warrior's Group Website",
             date: "28th September, 2022",
             details:
@@ -47,19 +60,7 @@ export default function Work() {
             colors: ["#559a55", "#6e6e6e"],
             type: "Client Project",
           },
-          {
-            name: "Wallpups ",
-            date: "31st July, 2022",
-            details:
-              "Wallpups is a cute little wallpaper setting app. I made this app just as one of my first apps in FLutter. This app is available on Playstore as well. This app simply uses the random image generator and stores them in array and serves you amazing wallpapers. You can easily set the wallpapers on your devices.",
-            imageLink: "/logos/wallpups.png",
-            liveLink:
-              "https://play.google.com/store/apps/details?id=com.diptanshumahish.wallpups",
-            technologies: ["FLUTTER", "UNSPLASH"],
-            colors: ["#472078", "#f3cfcf"],
-            type: "Personal Project",
-            mobImage: "/logos/wallpups.png",
-          },
+
           {
             name: "Warrior's Group Work Application",
             date: "2nd April, 2023",
