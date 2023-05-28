@@ -5,13 +5,14 @@ import { useEffect } from "react";
 
 const queryClient = new QueryClient();
 export default function Providers({ children }: React.PropsWithChildren) {
-  var tempScroll: number = 0;
   useEffect(() => {
+    var tempScroll = 0;
     const theme = localStorage.getItem("themeMode");
     if (theme === "true") {
       document.body.classList.add("dark");
     }
-    window.onscroll = () => {
+
+    const handleScroll = () => {
       var currentScroll = window.scrollY;
       if (tempScroll > currentScroll) {
         document.getElementById("flt")?.classList.remove("hidden");
@@ -19,6 +20,13 @@ export default function Providers({ children }: React.PropsWithChildren) {
         document.getElementById("flt")?.classList.add("hidden");
       }
       tempScroll = currentScroll;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      console.log("cleaned");
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (

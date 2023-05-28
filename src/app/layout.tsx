@@ -38,6 +38,7 @@ export const metadata: Metadata = {
     creator: "@DiptanshuMahis5",
     images: "https://heydiptanshu.vercel.app/banner.png",
   },
+
   classification: "Portfolio Website",
   appleWebApp: true,
   applicationName: "Diptanshu Mahish | Portfolio",
