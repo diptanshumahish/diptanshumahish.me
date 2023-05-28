@@ -11,7 +11,7 @@ export default function Skills() {
         <span className="w-[20%] lg:hidden h-[2px] rounded-md bg-backgroundDark dark:bg-backgroundLight my-2"></span>
         <span>Here are my </span>
         <span className="text-4xl font-bold">Skills (Tech / Non Tech)</span>
-        <span className={`${annie.className} lg:text-2xl`}>
+        <span className={`${annie.className} lg:text-xl`}>
           &quot;I just get the job done!&quot;
         </span>
       </div>

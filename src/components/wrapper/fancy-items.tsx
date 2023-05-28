@@ -39,7 +39,7 @@ export default function FancyItems() {
             <FigmaLogo />
             Figma
           </span>
-          <span className={`${annie.className} text-xl`}>Its love !</span>
+          <span className={`${annie.className} lg:text-xl`}>Its love !</span>
         </motion.div>
         <motion.div style={{ y: app }} className="col-span-2">
           <SmallBanners

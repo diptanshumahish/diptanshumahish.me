@@ -14,7 +14,7 @@ export default function FanctText({ content }: Props) {
   return (
     <motion.div
       style={{ y: fig }}
-      className={`${annie.className} text-2xl text-backgroundDark dark:text-backgroundLight`}
+      className={`${annie.className} lg:text-xl  text-backgroundDark dark:text-backgroundLight`}
     >
       {content}
     </motion.div>
