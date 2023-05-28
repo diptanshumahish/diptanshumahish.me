@@ -21,14 +21,10 @@ export default function Providers({ children }: React.PropsWithChildren) {
       } else {
         if (tempScroll > currentScroll) {
           document.getElementById("flt")?.classList.remove("hidden");
-          document.getElementById("NAV")?.classList.remove("bg-opacity-40");
-          document
-            .getElementById("NAV")
-            ?.classList.remove("dark:bg-opacity-40");
+          document.getElementById("NAV")?.classList.remove("hidden");
         } else {
           document.getElementById("flt")?.classList.add("hidden");
-          document.getElementById("NAV")?.classList.add("bg-opacity-40");
-          document.getElementById("NAV")?.classList.add("dark:bg-opacity-40");
+          document.getElementById("NAV")?.classList.add("hidden");
         }
       }
 
