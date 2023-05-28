@@ -49,8 +49,8 @@ export default function Header() {
             </Link>
           </h1>
           <p className={`${annie.className} lg:text-xl text-md lg:py-2`}>
-            A <span className="underline">Front-end developer</span>, a{" "}
-            <span className="underline">UI/UX designer</span>, a musician, a
+            A <span className=" font-bold">Front-end developer</span>, a{" "}
+            <span className=" font-bold">UI/UX designer</span>, a musician, a
             digital artist and much more. Besides coding all day, I read story
             books, listen to music or maybe sometimes you can find me out
             roaming here and there.

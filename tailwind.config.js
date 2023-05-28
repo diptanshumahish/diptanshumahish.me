@@ -22,9 +22,9 @@ module.exports = {
 
 
     colors: {
-      "backgroundLight": "#E8E0E0",
+      "backgroundLight": "#eaeaec",
       "backgroundDark": "#1e1e1e",
-      "main-theme": "#EA899A",
+      "main-theme": "#ea8484",
       "sec-theme":"#98ea89",
       "borders-dark":"#e8e0e03c"
     }
