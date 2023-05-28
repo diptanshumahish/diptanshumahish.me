@@ -14,9 +14,7 @@ export const metadata: Metadata = {
     icon: "/icon.png",
     shortcut: "/icon.png",
   },
-  authors: [
-    { name: "Diptanshu Mahish", url: "https://heydiptanshu.vercel.app" },
-  ],
+  authors: [{ name: "Diptanshu Mahish", url: "https://diptanshumahish.me" }],
   category: "Portfolio Websites",
   themeColor: "#EA899A",
   abstract:
@@ -31,12 +29,12 @@ export const metadata: Metadata = {
   ],
   robots: { follow: true },
   viewport: { width: "device-width", initialScale: 1 },
-  assets: "https://heydiptanshu.vercel.app/banner.png",
+  assets: "https://diptanshumahish.me/banner.png",
   twitter: {
     card: "summary_large_image",
-    site: "https://heydiptanshu.vercel.app",
+    site: "https://diptanshumahish.me",
     creator: "@DiptanshuMahis5",
-    images: "https://heydiptanshu.vercel.app/banner.png",
+    images: "https://diptanshumahish.me/banner.png",
   },
 
   classification: "Portfolio Website",
@@ -47,9 +45,9 @@ export const metadata: Metadata = {
     countryName: "India",
     emails: ["diptanshumahish2016@gmail.com"],
     title: "Diptanshu Mahish | Portfolio",
-    url: "https://heydiptanshu.vercel.app",
+    url: "https://diptanshumahish.me",
     siteName: "Diptanshu Mahish",
-    images: ["https://heydiptanshu.vercel.app/banner.png"],
+    images: ["https://diptanshumahish.me/banner.png"],
     description:
       "Diptanshu Mahish | Portfolio website. I'm a web and app development enthusiast. ",
     determiner: "the",
