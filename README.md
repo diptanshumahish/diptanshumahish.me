@@ -1,5 +1,7 @@
 # Diptanshu Mahish (portfolio)
 
+![Home page screenshot](https://diptanshumahish.me/Ss.png)
+
 This repository serves as the official portfolio website for my professional work. I specialize in UI/UX design, as well as web and app development. With a base in India, I consistently deliver exceptional websites using the Next.js and React frameworks, while also leveraging the cutting-edge Flutter technology to create innovative mobile applications.
 
 ## Description
