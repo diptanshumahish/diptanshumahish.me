@@ -13,7 +13,7 @@ interface Props {
     date: string;
     mobImage: string;
     type: string;
-    invert?:boolean;
+    invert?: boolean;
     colors: string[];
   }[];
 }
@@ -21,7 +21,7 @@ interface Props {
 export default function WorkCards({ cards }: Props) {
   return (
     <>
-      <motion.div className="flex relative  lg:gap-10 gap-2 overflow-y-hidden z-10 snap-mandatory hidden-scroll snap-x  snap-start">
+      <motion.div className="flex relative  flex-col gap-4 lg:gap-8">
         {cards.map((ele, idx) => {
           return (
             <Workcard
